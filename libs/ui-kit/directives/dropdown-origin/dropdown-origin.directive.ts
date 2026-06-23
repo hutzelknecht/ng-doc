@@ -20,10 +20,8 @@ export class NgDocDropdownOriginDirective extends CdkOverlayOrigin implements Ng
   constructor(...args: unknown[]);
 
   constructor() {
-    const origin = inject<ElementRef<HTMLElement>>(ElementRef);
+    super();
 
-    super(origin);
-
-    this.origin = origin;
+    this.origin = inject<ElementRef<HTMLElement>>(ElementRef);
   }
 }

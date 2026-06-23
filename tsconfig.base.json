@@ -31,7 +31,9 @@
       "@ng-doc/ui-kit/*": ["libs/ui-kit/*"],
       "@ng-doc/utils": ["libs/utils/index.ts"],
       "@ng-doc/utils/*": ["libs/utils/*"]
-    }
+    },
+    "ignoreDeprecations": "6.0",
+    "noUncheckedSideEffectImports": false
   },
   "exclude": ["node_modules", "tmp"]
 }
